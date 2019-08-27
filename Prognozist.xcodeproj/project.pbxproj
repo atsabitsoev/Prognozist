@@ -8,22 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		AC73EC7B23159C28006783C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73EC7A23159C28006783C0 /* AppDelegate.swift */; };
-		AC73EC7D23159C28006783C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73EC7C23159C28006783C0 /* ViewController.swift */; };
 		AC73EC8023159C28006783C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC73EC7E23159C28006783C0 /* Main.storyboard */; };
 		AC73EC8323159C28006783C0 /* Prognozist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC73EC8123159C28006783C0 /* Prognozist.xcdatamodeld */; };
 		AC73EC8523159C2A006783C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC73EC8423159C2A006783C0 /* Assets.xcassets */; };
 		AC73EC8823159C2A006783C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC73EC8623159C2A006783C0 /* LaunchScreen.storyboard */; };
+		AC73EC9123159F84006783C0 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73EC9023159F84006783C0 /* MainVC.swift */; };
+		AC73EC9323159FD3006783C0 /* MainTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73EC9223159FD3006783C0 /* MainTableViewDelegate.swift */; };
+		AC73EC952315A099006783C0 /* DailyForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73EC942315A099006783C0 /* DailyForecastCell.swift */; };
+		AC73EC992315A150006783C0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73EC982315A150006783C0 /* Colors.swift */; };
+		AC73EC9D2315A660006783C0 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73EC9C2315A660006783C0 /* MainModel.swift */; };
+		AC73ECA12315A77D006783C0 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73ECA02315A77D006783C0 /* Forecast.swift */; };
+		AC73ECA32315A8A3006783C0 /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73ECA22315A8A3006783C0 /* ForecastService.swift */; };
+		AC73ECA52315AC55006783C0 /* ForecastTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73ECA42315AC55006783C0 /* ForecastTimes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC73EC7723159C28006783C0 /* Prognozist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prognozist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC73EC7A23159C28006783C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC73EC7C23159C28006783C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC73EC7F23159C28006783C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC73EC8223159C28006783C0 /* Prognozist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Prognozist.xcdatamodel; sourceTree = "<group>"; };
 		AC73EC8423159C2A006783C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC73EC8723159C2A006783C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC73EC8923159C2A006783C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC73EC9023159F84006783C0 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		AC73EC9223159FD3006783C0 /* MainTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewDelegate.swift; sourceTree = "<group>"; };
+		AC73EC942315A099006783C0 /* DailyForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastCell.swift; sourceTree = "<group>"; };
+		AC73EC982315A150006783C0 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		AC73EC9C2315A660006783C0 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		AC73ECA02315A77D006783C0 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		AC73ECA22315A8A3006783C0 /* ForecastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
+		AC73ECA42315AC55006783C0 /* ForecastTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTimes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,78 @@
 		AC73EC7923159C28006783C0 /* Prognozist */ = {
 			isa = PBXGroup;
 			children = (
-				AC73EC7A23159C28006783C0 /* AppDelegate.swift */,
-				AC73EC7C23159C28006783C0 /* ViewController.swift */,
-				AC73EC7E23159C28006783C0 /* Main.storyboard */,
-				AC73EC8423159C2A006783C0 /* Assets.xcassets */,
-				AC73EC8623159C2A006783C0 /* LaunchScreen.storyboard */,
+				AC73EC972315A13E006783C0 /* GlobalEntities */,
+				AC73EC8F23159F67006783C0 /* Main */,
+				AC73EC962315A122006783C0 /* Supporting Files */,
 				AC73EC8923159C2A006783C0 /* Info.plist */,
 				AC73EC8123159C28006783C0 /* Prognozist.xcdatamodeld */,
 			);
 			path = Prognozist;
+			sourceTree = "<group>";
+		};
+		AC73EC8F23159F67006783C0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AC73EC9A2315A63F006783C0 /* View+Controller */,
+				AC73EC9B2315A651006783C0 /* Model */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AC73EC962315A122006783C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC73EC7A23159C28006783C0 /* AppDelegate.swift */,
+				AC73EC7E23159C28006783C0 /* Main.storyboard */,
+				AC73EC8423159C2A006783C0 /* Assets.xcassets */,
+				AC73EC8623159C2A006783C0 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC73EC972315A13E006783C0 /* GlobalEntities */ = {
+			isa = PBXGroup;
+			children = (
+				AC73EC9F2315A772006783C0 /* Model */,
+				AC73EC9E2315A76B006783C0 /* View */,
+			);
+			path = GlobalEntities;
+			sourceTree = "<group>";
+		};
+		AC73EC9A2315A63F006783C0 /* View+Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC73EC9023159F84006783C0 /* MainVC.swift */,
+				AC73EC9223159FD3006783C0 /* MainTableViewDelegate.swift */,
+				AC73EC942315A099006783C0 /* DailyForecastCell.swift */,
+			);
+			path = "View+Controller";
+			sourceTree = "<group>";
+		};
+		AC73EC9B2315A651006783C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC73EC9C2315A660006783C0 /* MainModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC73EC9E2315A76B006783C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC73EC982315A150006783C0 /* Colors.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC73EC9F2315A772006783C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC73ECA02315A77D006783C0 /* Forecast.swift */,
+				AC73ECA22315A8A3006783C0 /* ForecastService.swift */,
+				AC73ECA42315AC55006783C0 /* ForecastTimes.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +215,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC73EC7D23159C28006783C0 /* ViewController.swift in Sources */,
+				AC73ECA12315A77D006783C0 /* Forecast.swift in Sources */,
+				AC73ECA32315A8A3006783C0 /* ForecastService.swift in Sources */,
+				AC73EC952315A099006783C0 /* DailyForecastCell.swift in Sources */,
+				AC73EC992315A150006783C0 /* Colors.swift in Sources */,
 				AC73EC8323159C28006783C0 /* Prognozist.xcdatamodeld in Sources */,
+				AC73EC9D2315A660006783C0 /* MainModel.swift in Sources */,
+				AC73EC9323159FD3006783C0 /* MainTableViewDelegate.swift in Sources */,
+				AC73ECA52315AC55006783C0 /* ForecastTimes.swift in Sources */,
+				AC73EC9123159F84006783C0 /* MainVC.swift in Sources */,
 				AC73EC7B23159C28006783C0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
