@@ -20,15 +20,32 @@ class MainVC: UIViewController {
     
     var forecasts: [Forecast]?
     var itemTitles = ["Прогноз 1", "Прогноз 2", "Прогноз 3"]
+    let timesOfDay: [TimesOfDay] = [.morning, .afternoon, .evening]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.model = MainModel(vc: self)
+        self.model = MainModel()
+        addObservers()
         
         model.fetchForecasts()
         setDefaultValues()
+    }
+    
+    
+    private func addObservers() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(setNewForecasts),
+                                               name: NSNotification.Name(NotificationNames.forecastsFetched.rawValue),
+                                               object: nil)
+    }
+    
+    @objc
+    private func setNewForecasts() {
+        guard let newForecasts = ForecastService.standard.currentForecasts else { return }
+        self.forecasts = newForecasts
+        tableView.reloadData()
     }
     
     

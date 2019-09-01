@@ -18,7 +18,8 @@ class Forecast {
          multiplier: String,
          partOfBank: String,
          dateString: String,
-         author: String) {
+         author: String,
+         authorsDescribtion: String) {
         
         self.mainTitle = mainTitle
         self.additionalTitle = additionalTitle
@@ -27,6 +28,7 @@ class Forecast {
         self.partOfBank = partOfBank
         self.dateString = dateString
         self.author = author
+        self.authorsDescribtion = authorsDescribtion
     }
     
     
@@ -37,4 +39,5 @@ class Forecast {
     var partOfBank: String
     var dateString: String
     var author: String
+    var authorsDescribtion: String
 }

@@ -24,16 +24,21 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "DailyForecastCell") as! DailyForecastCell
         
-        cell.labTitle.textColor = Colors.grayColor
-        cell.labMain.textColor = Colors.yellowColor
-        cell.viewMain.backgroundColor = Colors.lightBlueColor
-        cell.labAuthor.textColor = Colors.grayColor
-        
-        cell.labTitle.text = itemTitles[indexPath.row]
-        let currentAuthor = forecasts[indexPath.row].author
-        cell.labAuthor.text = "Прогноз от: \(currentAuthor)"
+        cell.forecast = forecasts[indexPath.row]
+        cell.timeOfDay = timesOfDay[indexPath.row]
+        cell.set()
+        cell.labTitle.text = "Прогноз \(indexPath.row + 1)"
         
         return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Forecast", bundle: nil)
+        let forecastVC = storyboard.instantiateViewController(withIdentifier: "ForecastVC") as! ForecastVC
+        forecastVC.forecast = forecasts![indexPath.row]
+        forecastVC.title = "\(indexPath.row + 1)"
+        self.navigationController?.show(forecastVC, sender: nil)
     }
     
     

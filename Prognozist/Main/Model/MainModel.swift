@@ -12,15 +12,7 @@ import Foundation
 class MainModel {
     
     
-    init(vc: MainVC) {
-        self.vc = vc
-    }
-    
-    private var vc: MainVC!
-    
-    
     func fetchForecasts() {
         ForecastService.standard.getForecastsRequest()
-        vc.forecasts = ForecastService.standard.currentForecasts!
     }
 }

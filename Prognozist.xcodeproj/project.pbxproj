@@ -20,6 +20,9 @@
 		AC73ECA12315A77D006783C0 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73ECA02315A77D006783C0 /* Forecast.swift */; };
 		AC73ECA32315A8A3006783C0 /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73ECA22315A8A3006783C0 /* ForecastService.swift */; };
 		AC73ECA52315AC55006783C0 /* ForecastTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73ECA42315AC55006783C0 /* ForecastTimes.swift */; };
+		ACDC97E1231C511800E80ACA /* Forecast.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDC97E0231C511800E80ACA /* Forecast.storyboard */; };
+		ACDC97E6231C59CC00E80ACA /* ForecastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC97E5231C59CC00E80ACA /* ForecastVC.swift */; };
+		ACDC97E8231C722900E80ACA /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC97E7231C722900E80ACA /* NotificationNames.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		AC73ECA02315A77D006783C0 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		AC73ECA22315A8A3006783C0 /* ForecastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
 		AC73ECA42315AC55006783C0 /* ForecastTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTimes.swift; sourceTree = "<group>"; };
+		ACDC97E0231C511800E80ACA /* Forecast.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Forecast.storyboard; sourceTree = "<group>"; };
+		ACDC97E5231C59CC00E80ACA /* ForecastVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastVC.swift; sourceTree = "<group>"; };
+		ACDC97E7231C722900E80ACA /* NotificationNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNames.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 			children = (
 				AC73EC972315A13E006783C0 /* GlobalEntities */,
 				AC73EC8F23159F67006783C0 /* Main */,
+				ACDC97E2231C599A00E80ACA /* ForecastVC */,
 				AC73EC962315A122006783C0 /* Supporting Files */,
 				AC73EC8923159C2A006783C0 /* Info.plist */,
 				AC73EC8123159C28006783C0 /* Prognozist.xcdatamodeld */,
@@ -93,6 +100,7 @@
 			children = (
 				AC73EC7A23159C28006783C0 /* AppDelegate.swift */,
 				AC73EC7E23159C28006783C0 /* Main.storyboard */,
+				ACDC97E0231C511800E80ACA /* Forecast.storyboard */,
 				AC73EC8423159C2A006783C0 /* Assets.xcassets */,
 				AC73EC8623159C2A006783C0 /* LaunchScreen.storyboard */,
 			);
@@ -140,8 +148,25 @@
 				AC73ECA02315A77D006783C0 /* Forecast.swift */,
 				AC73ECA22315A8A3006783C0 /* ForecastService.swift */,
 				AC73ECA42315AC55006783C0 /* ForecastTimes.swift */,
+				ACDC97E7231C722900E80ACA /* NotificationNames.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		ACDC97E2231C599A00E80ACA /* ForecastVC */ = {
+			isa = PBXGroup;
+			children = (
+				ACDC97E4231C59B300E80ACA /* View+Controller */,
+			);
+			path = ForecastVC;
+			sourceTree = "<group>";
+		};
+		ACDC97E4231C59B300E80ACA /* View+Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ACDC97E5231C59CC00E80ACA /* ForecastVC.swift */,
+			);
+			path = "View+Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC73EC8823159C2A006783C0 /* LaunchScreen.storyboard in Resources */,
+				ACDC97E1231C511800E80ACA /* Forecast.storyboard in Resources */,
 				AC73EC8523159C2A006783C0 /* Assets.xcassets in Resources */,
 				AC73EC8023159C28006783C0 /* Main.storyboard in Resources */,
 			);
@@ -216,11 +242,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC73ECA12315A77D006783C0 /* Forecast.swift in Sources */,
+				ACDC97E8231C722900E80ACA /* NotificationNames.swift in Sources */,
 				AC73ECA32315A8A3006783C0 /* ForecastService.swift in Sources */,
 				AC73EC952315A099006783C0 /* DailyForecastCell.swift in Sources */,
 				AC73EC992315A150006783C0 /* Colors.swift in Sources */,
 				AC73EC8323159C28006783C0 /* Prognozist.xcdatamodeld in Sources */,
 				AC73EC9D2315A660006783C0 /* MainModel.swift in Sources */,
+				ACDC97E6231C59CC00E80ACA /* ForecastVC.swift in Sources */,
 				AC73EC9323159FD3006783C0 /* MainTableViewDelegate.swift in Sources */,
 				AC73ECA52315AC55006783C0 /* ForecastTimes.swift in Sources */,
 				AC73EC9123159F84006783C0 /* MainVC.swift in Sources */,
@@ -373,6 +401,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89WB9E7UEU;
 				INFOPLIST_FILE = Prognozist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,7 +409,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = a.s.bitsoev.Prognozist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -391,6 +420,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89WB9E7UEU;
 				INFOPLIST_FILE = Prognozist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,7 +428,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = a.s.bitsoev.Prognozist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
