@@ -25,13 +25,13 @@ class DailyForecastCell: UITableViewCell {
         }
     }
     
-    
-    private var timer: Timer?
-    private var timeRestForOpening: TimeInterval!
-    
-    
-    override func layoutSubviews() {
+    override func didMoveToSuperview() {
         set()
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(updateTimer),
+                                               name: NSNotification.Name(rawValue: NotificationNames.secondGone.rawValue),
+                                               object: nil)
+        TimerForCells.standard.startMorningTimer()
     }
     
     
@@ -40,29 +40,30 @@ class DailyForecastCell: UITableViewCell {
         let currentAuthor = forecast.author
         labAuthor.text = "Прогноз от: \(currentAuthor)"
         
-        if shown {
-            
-            configureShownCell()
-            
+        shown ? configureShownCell() : configureHiddenCell()
+    }
+    
+    
+    @objc
+    private func updateTimer() {
+        
+        var seconds = 0
+        
+        switch timeOfDay! {
+        case .morning:
+            seconds = Int(TimerForCells.standard.timeRestMorning)
+        case .afternoon:
+            seconds = Int(TimerForCells.standard.timeRestAfternoon)
+        case .evening:
+            seconds = Int(TimerForCells.standard.timeRestEvening)
+        }
+        
+        if seconds > 16*60*60 {
+            self.shown = true
         } else {
-            
-            let nextForecastDate = ForecastTimes().getNextForecastTime(in: timeOfDay)
-            timeRestForOpening = nextForecastDate.timeIntervalSinceNow
-            self.timer?.invalidate()
-            self.timer = nil
-            self.timer = Timer.scheduledTimer(withTimeInterval: 1,
-                                 repeats: true) { (timer) in
-                                    if self.timeRestForOpening >= 16 * 60 * 60 {
-                                        self.shown = true
-                                    } else {
-                                        self.timeRestForOpening -= 1
-                                        let formattedString = self.formattedSecondsString(from: Int(self.timeRestForOpening))
-                                        self.labMain.text = formattedString
-                                    }
-            }
-            
-            configureHiddenCell()
-            
+            self.shown = false
+            let timeString = formattedSecondsString(from: seconds)
+            self.labMain.text = timeString
         }
     }
     

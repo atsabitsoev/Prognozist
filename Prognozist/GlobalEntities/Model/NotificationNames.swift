@@ -12,4 +12,5 @@ import Foundation
 enum NotificationNames: String {
     
     case forecastsFetched = "forecastsFetched"
+    case secondGone = "secondGone"
 }

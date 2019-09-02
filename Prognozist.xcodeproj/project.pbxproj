@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AC6C3780231CE831003F583E /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC6C377E231CE831003F583E /* SF-Pro-Text-Bold.otf */; };
 		AC6C3781231CE831003F583E /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC6C377F231CE831003F583E /* SF-Pro-Text-Regular.otf */; };
+		AC6C3783231CF50C003F583E /* TimerForCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C3782231CF50C003F583E /* TimerForCells.swift */; };
+		AC6C3785231CF7DD003F583E /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C3784231CF7DD003F583E /* NotificationManager.swift */; };
 		AC73EC7B23159C28006783C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73EC7A23159C28006783C0 /* AppDelegate.swift */; };
 		AC73EC8023159C28006783C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC73EC7E23159C28006783C0 /* Main.storyboard */; };
 		AC73EC8323159C28006783C0 /* Prognozist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC73EC8123159C28006783C0 /* Prognozist.xcdatamodeld */; };
@@ -30,6 +32,8 @@
 /* Begin PBXFileReference section */
 		AC6C377E231CE831003F583E /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
 		AC6C377F231CE831003F583E /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		AC6C3782231CF50C003F583E /* TimerForCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerForCells.swift; sourceTree = "<group>"; };
+		AC6C3784231CF7DD003F583E /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		AC73EC7723159C28006783C0 /* Prognozist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prognozist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC73EC7A23159C28006783C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC73EC7F23159C28006783C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				AC73EC9C2315A660006783C0 /* MainModel.swift */,
+				AC6C3782231CF50C003F583E /* TimerForCells.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 				AC73ECA22315A8A3006783C0 /* ForecastService.swift */,
 				AC73ECA42315AC55006783C0 /* ForecastTimes.swift */,
 				ACDC97E7231C722900E80ACA /* NotificationNames.swift */,
+				AC6C3784231CF7DD003F583E /* NotificationManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -257,9 +263,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC6C3783231CF50C003F583E /* TimerForCells.swift in Sources */,
 				AC73ECA12315A77D006783C0 /* Forecast.swift in Sources */,
 				ACDC97E8231C722900E80ACA /* NotificationNames.swift in Sources */,
 				AC73ECA32315A8A3006783C0 /* ForecastService.swift in Sources */,
+				AC6C3785231CF7DD003F583E /* NotificationManager.swift in Sources */,
 				AC73EC952315A099006783C0 /* DailyForecastCell.swift in Sources */,
 				AC73EC992315A150006783C0 /* Colors.swift in Sources */,
 				AC73EC8323159C28006783C0 /* Prognozist.xcdatamodeld in Sources */,
