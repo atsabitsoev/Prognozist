@@ -141,7 +141,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Прогнозы на сегодня" id="acH-Tq-qCa"/>
+                    <navigationItem key="navigationItem" title="Прогнозы на сегодня" id="acH-Tq-qCa">
+                        <barButtonItem key="rightBarButtonItem" image="settings" id="iOx-2u-NoE">
+                            <color key="tintColor" red="0.86274509803921573" green="0.89803921568627454" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="OsQ-Db-RSg" kind="show" id="HQo-a2-0Fw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="butVIP" destination="f2g-CE-1vv" id="zQe-Yb-2bX"/>
                         <outlet property="tableView" destination="TXO-F4-5rJ" id="Vkn-Zg-hJz"/>
@@ -149,12 +156,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="109.82142857142857"/>
+            <point key="canvasLocation" x="1957.9710144927537" y="109.82142857142857"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--SettingsVC-->
+        <scene sceneID="k5t-3E-Lpn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" referencedIdentifier="SettingsVC" id="OsQ-Db-RSg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WGa-jq-3Ny" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2693" y="110"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="JLt-eC-3eY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Ye-ub-Dom" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="MHT-fz-yad"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="OTv-1C-IyK">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -172,7 +188,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="351-ZF-g9D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="264" y="110"/>
+            <point key="canvasLocation" x="1173.913043478261" y="109.82142857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="settings" width="27" height="28"/>
+    </resources>
 </document>

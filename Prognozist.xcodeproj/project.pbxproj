@@ -11,6 +11,7 @@
 		AC6C3781231CE831003F583E /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC6C377F231CE831003F583E /* SF-Pro-Text-Regular.otf */; };
 		AC6C3783231CF50C003F583E /* TimerForCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C3782231CF50C003F583E /* TimerForCells.swift */; };
 		AC6C3785231CF7DD003F583E /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C3784231CF7DD003F583E /* NotificationManager.swift */; };
+		AC6C3787231D3C7C003F583E /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6C3786231D3C7C003F583E /* Settings.storyboard */; };
 		AC73EC7B23159C28006783C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73EC7A23159C28006783C0 /* AppDelegate.swift */; };
 		AC73EC8023159C28006783C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC73EC7E23159C28006783C0 /* Main.storyboard */; };
 		AC73EC8323159C28006783C0 /* Prognozist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC73EC8123159C28006783C0 /* Prognozist.xcdatamodeld */; };
@@ -34,6 +35,7 @@
 		AC6C377F231CE831003F583E /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		AC6C3782231CF50C003F583E /* TimerForCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerForCells.swift; sourceTree = "<group>"; };
 		AC6C3784231CF7DD003F583E /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		AC6C3786231D3C7C003F583E /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		AC73EC7723159C28006783C0 /* Prognozist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prognozist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC73EC7A23159C28006783C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC73EC7F23159C28006783C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				AC73EC7A23159C28006783C0 /* AppDelegate.swift */,
 				AC73EC7E23159C28006783C0 /* Main.storyboard */,
 				ACDC97E0231C511800E80ACA /* Forecast.storyboard */,
+				AC6C3786231D3C7C003F583E /* Settings.storyboard */,
 				AC73EC8423159C2A006783C0 /* Assets.xcassets */,
 				AC73EC8623159C2A006783C0 /* LaunchScreen.storyboard */,
 			);
@@ -253,6 +256,7 @@
 				ACDC97E1231C511800E80ACA /* Forecast.storyboard in Resources */,
 				AC73EC8523159C2A006783C0 /* Assets.xcassets in Resources */,
 				AC73EC8023159C28006783C0 /* Main.storyboard in Resources */,
+				AC6C3787231D3C7C003F583E /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
