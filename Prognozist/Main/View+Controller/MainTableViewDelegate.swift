@@ -26,7 +26,6 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
         
         cell.forecast = forecasts[indexPath.row]
         cell.timeOfDay = timesOfDay[indexPath.row]
-        cell.set()
         cell.labTitle.text = "Прогноз \(indexPath.row + 1)"
         
         return cell
@@ -37,7 +36,7 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
         let storyboard = UIStoryboard(name: "Forecast", bundle: nil)
         let forecastVC = storyboard.instantiateViewController(withIdentifier: "ForecastVC") as! ForecastVC
         forecastVC.forecast = forecasts![indexPath.row]
-        forecastVC.title = "\(indexPath.row + 1)"
+        forecastVC.title = "\(itemTitles[indexPath.row])"
         self.navigationController?.show(forecastVC, sender: nil)
     }
     

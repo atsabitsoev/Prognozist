@@ -9,6 +9,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Bold.otf">
+            <string>SFProText-Bold</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--ForecastVC-->
         <scene sceneID="EPV-bN-rpt">
@@ -32,7 +40,7 @@
                                                         <string key="text">Футбол
 Чемпионат России
 Премьер-лига</string>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
                                                         <color key="textColor" red="0.86274509803921573" green="0.89803921568627454" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -56,7 +64,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тамбов - Динамо Москва" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="IEj-d9-r5t">
                                                         <rect key="frame" x="16" y="8" width="342" height="71"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -79,7 +87,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Индивидуальный тотал 2-го (1) больше" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="mHG-0C-QGj">
                                                         <rect key="frame" x="16" y="8" width="342" height="71"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -101,17 +109,17 @@
                                                 <rect key="frame" x="0.0" y="300" width="374" height="87"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="M6Z-xn-GHU">
-                                                        <rect key="frame" x="108" y="8" width="158.5" height="71"/>
+                                                        <rect key="frame" x="104" y="8" width="166" height="71"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Коэффициент:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93Y-d9-jrW">
-                                                                <rect key="frame" x="0.0" y="0.0" width="122.5" height="71"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="127.5" height="71"/>
+                                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="18"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.7" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeU-cw-uD0">
-                                                                <rect key="frame" x="126.5" y="0.0" width="32" height="71"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                                <rect key="frame" x="131.5" y="0.0" width="34.5" height="71"/>
+                                                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="24"/>
                                                                 <color key="textColor" red="0.86274509799999999" green="0.8980392157" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -134,17 +142,17 @@
                                                 <rect key="frame" x="0.0" y="400" width="374" height="87"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="vB9-CN-Syb">
-                                                        <rect key="frame" x="122" y="29" width="130.5" height="29"/>
+                                                        <rect key="frame" x="119.5" y="29" width="135.5" height="29"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M40-3r-yjB">
-                                                                <rect key="frame" x="0.0" y="0.0" width="49.5" height="29"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="29"/>
+                                                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="24"/>
                                                                 <color key="textColor" red="0.86274509799999999" green="0.8980392157" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" от банка" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56U-2R-sbd">
-                                                                <rect key="frame" x="53.5" y="0.0" width="77" height="29"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <rect key="frame" x="54.5" y="0.0" width="81" height="29"/>
+                                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="18"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -166,28 +174,28 @@
                                                 <rect key="frame" x="0.0" y="500" width="374" height="87"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="M6G-rZ-LwU">
-                                                        <rect key="frame" x="67.5" y="18" width="239" height="51"/>
+                                                        <rect key="frame" x="62" y="18" width="250" height="51"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="K5n-Bb-ehE">
-                                                                <rect key="frame" x="0.0" y="0.0" width="239" height="21.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="250" height="21.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Начало: " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fjh-mU-Zpp">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="21.5"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="76" height="21.5"/>
+                                                                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="18"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22/08/2019, 16:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PqN-IZ-aNG">
-                                                                        <rect key="frame" x="76.5" y="0.0" width="162.5" height="21.5"/>
-                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                                        <rect key="frame" x="80" y="0.0" width="170" height="21.5"/>
+                                                                        <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
                                                                         <color key="textColor" red="0.86274509799999999" green="0.8980392157" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                             </stackView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(по МСК)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvP-3E-beN">
-                                                                <rect key="frame" x="80.5" y="29.5" width="78" height="21.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <rect key="frame" x="84.5" y="29.5" width="81.5" height="21.5"/>
+                                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="18"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -210,11 +218,11 @@
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZP-yh-Tzn">
                                         <rect key="frame" x="20" y="600" width="374" height="151"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="809-w8-WhH">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="809-w8-WhH">
                                                 <rect key="frame" x="8" y="0.0" width="358" height="151"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <mutableString key="text">Динамо Москва в отличной форме, игроки выйдут на матч в полном стартовом составе, в отличие от ФК Томбов, у которого отсутствует главный голкипер и еще несколько игроков основного состава. Последние 4 матча Динамо забивает по 3 мяча. Думаю победа будет легкой, всем удачи!Динамо Москва в отличной форме, игроки выйдут на матч в полном стартовом составе, в отличие от ФК Томбов, у которого отсутствует главный голкипер и еще несколько игроков основного состава. Последние 4 матча Динамо забивает по 3 мяча. Думаю победа будет легкой, всем удачи!</mutableString>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <string key="text">Динамо Москва в отличной форме, игроки выйдут на матч в полном стартовом составе, в отличие от ФК Томбов, у которого отсутствует главный голкипер и еще несколько игроков основного состава. Последние 4 матча Динамо забивает по 3 мяча. Думаю победа будет легкой, всем удачи!Динамо Москва в отличной форме, игроки выйдут на матч в полном стартовом составе, в отличие от ФК Томбов, у которого отсутствует главный голкипер и еще несколько игроков основного состава. Последние 4 матча Динамо забивает по 3 мяча. Думаю победа будет легкой, всем удачи!</string>
+                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
@@ -261,6 +269,7 @@
                         <outlet property="labPercentsFromBank" destination="M40-3r-yjB" id="8rv-7S-RKQ"/>
                         <outlet property="labTitleMain" destination="ErX-GK-1KN" id="U3F-VP-Ww9"/>
                         <outlet property="labTitleSecond" destination="IEj-d9-r5t" id="n0V-KS-qt6"/>
+                        <outlet property="scrollView" destination="eUL-Wh-JWn" id="BfL-fi-4cO"/>
                         <outlet property="textViewDescribtion" destination="809-w8-WhH" id="6BF-AL-RYe"/>
                     </connections>
                 </viewController>

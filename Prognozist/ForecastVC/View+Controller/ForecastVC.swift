@@ -18,6 +18,7 @@ class ForecastVC: UIViewController {
     @IBOutlet weak var labPercentsFromBank: UILabel!
     @IBOutlet weak var labDate: UILabel!
     @IBOutlet weak var textViewDescribtion: UITextView!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     
     var forecast: Forecast!
@@ -39,6 +40,7 @@ class ForecastVC: UIViewController {
         labPercentsFromBank.text = forecast.partOfBank
         labDate.text = forecast.dateString
         textViewDescribtion.text = forecast.authorsDescribtion
+        self.scrollView.delaysContentTouches = false
     }
 
 }

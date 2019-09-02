@@ -30,6 +30,11 @@ class DailyForecastCell: UITableViewCell {
     private var timeRestForOpening: TimeInterval!
     
     
+    override func layoutSubviews() {
+        set()
+    }
+    
+    
     func set() {
         
         let currentAuthor = forecast.author
@@ -51,7 +56,8 @@ class DailyForecastCell: UITableViewCell {
                                         self.shown = true
                                     } else {
                                         self.timeRestForOpening -= 1
-                                        self.labMain.text = "\(Int(self.timeRestForOpening))"
+                                        let formattedString = self.formattedSecondsString(from: Int(self.timeRestForOpening))
+                                        self.labMain.text = formattedString
                                     }
             }
             
@@ -78,6 +84,23 @@ class DailyForecastCell: UITableViewCell {
         viewMain.backgroundColor = Colors.grayColor
         
         self.isUserInteractionEnabled = false
+    }
+    
+    
+    private func formattedSecondsString(from seconds: Int) -> String {
+        
+        let hours = seconds / 3600
+        let minutes = (seconds - hours * 3600) / 60
+        let newSeconds = seconds - hours * 3600 - minutes * 60
+        
+        var hoursString = ""
+        var minutesString = ""
+        var secondsString = ""
+        hoursString = hours < 10 ? "0\(hours)" : "\(hours)"
+        minutesString = minutes < 10 ? "0\(minutes)" : "\(minutes)"
+        secondsString = newSeconds < 10 ? "0\(newSeconds)" : "\(newSeconds)"
+        
+        return "\(hoursString):\(minutesString):\(secondsString)"
     }
     
 
