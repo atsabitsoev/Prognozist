@@ -25,6 +25,11 @@
 		AC73ECA12315A77D006783C0 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73ECA02315A77D006783C0 /* Forecast.swift */; };
 		AC73ECA32315A8A3006783C0 /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73ECA22315A8A3006783C0 /* ForecastService.swift */; };
 		AC73ECA52315AC55006783C0 /* ForecastTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73ECA42315AC55006783C0 /* ForecastTimes.swift */; };
+		ACA3C9EB231EECE400CC1611 /* Subscribtion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA3C9EA231EECE400CC1611 /* Subscribtion.storyboard */; };
+		ACA3C9ED231EEFCF00CC1611 /* 17688.otf in Resources */ = {isa = PBXBuildFile; fileRef = ACA3C9EC231EEFCF00CC1611 /* 17688.otf */; };
+		ACA3C9EF231EF08D00CC1611 /* 17731.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACA3C9EE231EF08D00CC1611 /* 17731.ttf */; };
+		ACA3C9F3231F092700CC1611 /* SubscribtionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3C9F2231F092700CC1611 /* SubscribtionVC.swift */; };
+		ACA3C9F6231F09BF00CC1611 /* GradientViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3C9F5231F09BF00CC1611 /* GradientViewExtension.swift */; };
 		ACDC97E1231C511800E80ACA /* Forecast.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDC97E0231C511800E80ACA /* Forecast.storyboard */; };
 		ACDC97E6231C59CC00E80ACA /* ForecastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC97E5231C59CC00E80ACA /* ForecastVC.swift */; };
 		ACDC97E8231C722900E80ACA /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC97E7231C722900E80ACA /* NotificationNames.swift */; };
@@ -51,6 +56,11 @@
 		AC73ECA02315A77D006783C0 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		AC73ECA22315A8A3006783C0 /* ForecastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
 		AC73ECA42315AC55006783C0 /* ForecastTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTimes.swift; sourceTree = "<group>"; };
+		ACA3C9EA231EECE400CC1611 /* Subscribtion.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Subscribtion.storyboard; sourceTree = "<group>"; };
+		ACA3C9EC231EEFCF00CC1611 /* 17688.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 17688.otf; sourceTree = "<group>"; };
+		ACA3C9EE231EF08D00CC1611 /* 17731.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 17731.ttf; sourceTree = "<group>"; };
+		ACA3C9F2231F092700CC1611 /* SubscribtionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribtionVC.swift; sourceTree = "<group>"; };
+		ACA3C9F5231F09BF00CC1611 /* GradientViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewExtension.swift; sourceTree = "<group>"; };
 		ACDC97E0231C511800E80ACA /* Forecast.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Forecast.storyboard; sourceTree = "<group>"; };
 		ACDC97E5231C59CC00E80ACA /* ForecastVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastVC.swift; sourceTree = "<group>"; };
 		ACDC97E7231C722900E80ACA /* NotificationNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNames.swift; sourceTree = "<group>"; };
@@ -72,6 +82,8 @@
 			children = (
 				AC6C377E231CE831003F583E /* SF-Pro-Text-Bold.otf */,
 				AC6C377F231CE831003F583E /* SF-Pro-Text-Regular.otf */,
+				ACA3C9EC231EEFCF00CC1611 /* 17688.otf */,
+				ACA3C9EE231EF08D00CC1611 /* 17731.ttf */,
 			);
 			path = "Шрифты";
 			sourceTree = "<group>";
@@ -95,9 +107,11 @@
 		AC73EC7923159C28006783C0 /* Prognozist */ = {
 			isa = PBXGroup;
 			children = (
+				ACA3C9F4231F09AC00CC1611 /* Extensions */,
 				AC73EC972315A13E006783C0 /* GlobalEntities */,
 				AC73EC8F23159F67006783C0 /* Main */,
 				ACDC97E2231C599A00E80ACA /* ForecastVC */,
+				ACA3C9F0231F08FA00CC1611 /* Subscribtion */,
 				AC73EC962315A122006783C0 /* Supporting Files */,
 				AC73EC8923159C2A006783C0 /* Info.plist */,
 				AC73EC8123159C28006783C0 /* Prognozist.xcdatamodeld */,
@@ -122,6 +136,7 @@
 				AC73EC7E23159C28006783C0 /* Main.storyboard */,
 				ACDC97E0231C511800E80ACA /* Forecast.storyboard */,
 				AC6C3786231D3C7C003F583E /* Settings.storyboard */,
+				ACA3C9EA231EECE400CC1611 /* Subscribtion.storyboard */,
 				AC73EC8423159C2A006783C0 /* Assets.xcassets */,
 				AC73EC8623159C2A006783C0 /* LaunchScreen.storyboard */,
 			);
@@ -174,6 +189,30 @@
 				AC6C3784231CF7DD003F583E /* NotificationManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		ACA3C9F0231F08FA00CC1611 /* Subscribtion */ = {
+			isa = PBXGroup;
+			children = (
+				ACA3C9F1231F090B00CC1611 /* View+Controller */,
+			);
+			path = Subscribtion;
+			sourceTree = "<group>";
+		};
+		ACA3C9F1231F090B00CC1611 /* View+Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ACA3C9F2231F092700CC1611 /* SubscribtionVC.swift */,
+			);
+			path = "View+Controller";
+			sourceTree = "<group>";
+		};
+		ACA3C9F4231F09AC00CC1611 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ACA3C9F5231F09BF00CC1611 /* GradientViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		ACDC97E2231C599A00E80ACA /* ForecastVC */ = {
@@ -254,7 +293,10 @@
 				AC73EC8823159C2A006783C0 /* LaunchScreen.storyboard in Resources */,
 				AC6C3780231CE831003F583E /* SF-Pro-Text-Bold.otf in Resources */,
 				ACDC97E1231C511800E80ACA /* Forecast.storyboard in Resources */,
+				ACA3C9EF231EF08D00CC1611 /* 17731.ttf in Resources */,
 				AC73EC8523159C2A006783C0 /* Assets.xcassets in Resources */,
+				ACA3C9EB231EECE400CC1611 /* Subscribtion.storyboard in Resources */,
+				ACA3C9ED231EEFCF00CC1611 /* 17688.otf in Resources */,
 				AC73EC8023159C28006783C0 /* Main.storyboard in Resources */,
 				AC6C3787231D3C7C003F583E /* Settings.storyboard in Resources */,
 			);
@@ -274,10 +316,12 @@
 				AC6C3785231CF7DD003F583E /* NotificationManager.swift in Sources */,
 				AC73EC952315A099006783C0 /* DailyForecastCell.swift in Sources */,
 				AC73EC992315A150006783C0 /* Colors.swift in Sources */,
+				ACA3C9F3231F092700CC1611 /* SubscribtionVC.swift in Sources */,
 				AC73EC8323159C28006783C0 /* Prognozist.xcdatamodeld in Sources */,
 				AC73EC9D2315A660006783C0 /* MainModel.swift in Sources */,
 				ACDC97E6231C59CC00E80ACA /* ForecastVC.swift in Sources */,
 				AC73EC9323159FD3006783C0 /* MainTableViewDelegate.swift in Sources */,
+				ACA3C9F6231F09BF00CC1611 /* GradientViewExtension.swift in Sources */,
 				AC73ECA52315AC55006783C0 /* ForecastTimes.swift in Sources */,
 				AC73EC9123159F84006783C0 /* MainVC.swift in Sources */,
 				AC73EC7B23159C28006783C0 /* AppDelegate.swift in Sources */,

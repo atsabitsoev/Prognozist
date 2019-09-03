@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WYb-di-QNo">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Bold.otf">
+            <string>SFProText-Bold</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--SubscribtionVC-->
+        <scene sceneID="Rf7-aY-U4r">
+            <objects>
+                <viewController id="WYb-di-QNo" customClass="SubscribtionVC" customModule="Prognozist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bYC-QS-126">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ежедневные прогнозы" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLj-7u-ab4">
+                                <rect key="frame" x="18" y="44" width="378" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="qZk-fz-LO2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTb-hJ-pdM">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mhf-A9-lSE">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пользуйся стандартной подпиской и получай 3 прогноза каждый день! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="P7b-nk-gwT">
+                                                <rect key="frame" x="59" y="403" width="296" height="64.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="296" id="Kph-sx-XfV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Получай ежедневные прогнозы на спорт с рекоммендациями о размере ставок от лучших аналитиков!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Gni-er-gvM">
+                                                <rect key="frame" x="64" y="55" width="286" height="86"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="304" id="xsR-7I-Ger"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="UyP-Y3-dHI">
+                                                <rect key="frame" x="32" y="522.5" width="350" height="202"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rM2-zl-6MH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="58"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Оформить на неделю" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9i0-iF-SwB">
+                                                                <rect key="frame" x="0.0" y="0.0" width="221.5" height="58"/>
+                                                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKO-Eo-wEy">
+                                                                <rect key="frame" x="229.5" y="0.0" width="120.5" height="58"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xU-B5-IUg">
+                                                                        <rect key="frame" x="0.0" y="-3" width="120.5" height="64"/>
+                                                                        <color key="backgroundColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" secondItem="7xU-B5-IUg" secondAttribute="height" multiplier="55:29" id="jDa-ZJ-k8J"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="18"/>
+                                                                        <state key="normal" title="329 ₽">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="7xU-B5-IUg" firstAttribute="centerY" secondItem="HKO-Eo-wEy" secondAttribute="centerY" id="B3Q-et-JCq"/>
+                                                                    <constraint firstItem="7xU-B5-IUg" firstAttribute="leading" secondItem="HKO-Eo-wEy" secondAttribute="leading" id="BQb-Cn-5yF"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="7xU-B5-IUg" secondAttribute="trailing" id="s2t-j4-DCv"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="HKO-Eo-wEy" firstAttribute="width" secondItem="9i0-iF-SwB" secondAttribute="width" multiplier="110:202" id="8MM-p4-1Ry"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="09L-RT-osd">
+                                                        <rect key="frame" x="0.0" y="72" width="350" height="58"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Оформить на месяц" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="r3d-VL-qdS">
+                                                                <rect key="frame" x="0.0" y="0.0" width="221.5" height="58"/>
+                                                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sOY-Fh-PS0">
+                                                                <rect key="frame" x="229.5" y="0.0" width="120.5" height="58"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chn-fo-RSs">
+                                                                        <rect key="frame" x="0.0" y="-3" width="120.5" height="64"/>
+                                                                        <color key="backgroundColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" secondItem="chn-fo-RSs" secondAttribute="height" multiplier="55:29" id="g7h-v1-eUa"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="18"/>
+                                                                        <state key="normal" title="329 ₽">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="chn-fo-RSs" firstAttribute="leading" secondItem="sOY-Fh-PS0" secondAttribute="leading" id="A4B-FJ-vXT"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="chn-fo-RSs" secondAttribute="trailing" id="Nzj-h2-aef"/>
+                                                                    <constraint firstItem="chn-fo-RSs" firstAttribute="centerY" secondItem="sOY-Fh-PS0" secondAttribute="centerY" id="pPU-yB-ihQ"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="sOY-Fh-PS0" firstAttribute="width" secondItem="r3d-VL-qdS" secondAttribute="width" multiplier="110:202" id="yOH-ra-QxL"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0Zt-uN-BEN">
+                                                        <rect key="frame" x="0.0" y="144" width="350" height="58"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Оформить на год" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="eMX-Vc-mBG">
+                                                                <rect key="frame" x="0.0" y="0.0" width="221.5" height="58"/>
+                                                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5h-lT-Fmq">
+                                                                <rect key="frame" x="229.5" y="0.0" width="120.5" height="58"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3G7-Hr-Lix">
+                                                                        <rect key="frame" x="0.0" y="-3" width="120.5" height="64"/>
+                                                                        <color key="backgroundColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" secondItem="3G7-Hr-Lix" secondAttribute="height" multiplier="55:29" id="aZs-GI-9sR"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="18"/>
+                                                                        <state key="normal" title="329 ₽">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="3G7-Hr-Lix" firstAttribute="centerY" secondItem="u5h-lT-Fmq" secondAttribute="centerY" id="Dvq-8a-akB"/>
+                                                                    <constraint firstItem="3G7-Hr-Lix" firstAttribute="leading" secondItem="u5h-lT-Fmq" secondAttribute="leading" id="laB-6t-uFq"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="3G7-Hr-Lix" secondAttribute="trailing" id="thq-Jm-Pfk"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="u5h-lT-Fmq" firstAttribute="width" secondItem="eMX-Vc-mBG" secondAttribute="width" multiplier="110:202" id="yWT-Zo-aGD"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="r3d-VL-qdS" firstAttribute="width" secondItem="9i0-iF-SwB" secondAttribute="width" id="IkB-6v-0aH"/>
+                                                    <constraint firstItem="eMX-Vc-mBG" firstAttribute="width" secondItem="r3d-VL-qdS" secondAttribute="width" id="TDL-d5-s0s"/>
+                                                    <constraint firstAttribute="height" constant="202" id="lfh-pm-kHQ"/>
+                                                </constraints>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Money" translatesAutoresizingMaskIntoConstraints="NO" id="g7h-TJ-WQ5">
+                                                <rect key="frame" x="18" y="196" width="378" height="152"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="g7h-TJ-WQ5" firstAttribute="leading" secondItem="Mhf-A9-lSE" secondAttribute="leading" constant="18" id="Bxf-FK-itb"/>
+                                            <constraint firstItem="UyP-Y3-dHI" firstAttribute="top" secondItem="P7b-nk-gwT" secondAttribute="bottom" constant="55" id="EKr-Ue-92l"/>
+                                            <constraint firstAttribute="height" constant="808" id="JYi-uh-ukT"/>
+                                            <constraint firstItem="Gni-er-gvM" firstAttribute="centerX" secondItem="Mhf-A9-lSE" secondAttribute="centerX" id="KMb-OR-Zqm"/>
+                                            <constraint firstAttribute="trailing" secondItem="g7h-TJ-WQ5" secondAttribute="trailing" constant="18" id="TUY-Pz-vrZ"/>
+                                            <constraint firstItem="UyP-Y3-dHI" firstAttribute="leading" secondItem="Mhf-A9-lSE" secondAttribute="leadingMargin" constant="24" id="azM-Hq-Tkg"/>
+                                            <constraint firstItem="g7h-TJ-WQ5" firstAttribute="top" secondItem="Gni-er-gvM" secondAttribute="bottom" constant="55" id="cx5-eW-7BN"/>
+                                            <constraint firstItem="P7b-nk-gwT" firstAttribute="centerX" secondItem="Mhf-A9-lSE" secondAttribute="centerX" id="gQK-JS-bmL"/>
+                                            <constraint firstItem="P7b-nk-gwT" firstAttribute="top" secondItem="g7h-TJ-WQ5" secondAttribute="bottom" constant="55" id="kh5-9P-ulU"/>
+                                            <constraint firstItem="UyP-Y3-dHI" firstAttribute="trailing" secondItem="Mhf-A9-lSE" secondAttribute="trailingMargin" constant="-24" id="uJQ-Tm-M5p"/>
+                                            <constraint firstItem="Gni-er-gvM" firstAttribute="top" secondItem="Mhf-A9-lSE" secondAttribute="top" constant="55" id="zZR-JZ-CHS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Mhf-A9-lSE" secondAttribute="trailing" id="224-6L-lPh"/>
+                                    <constraint firstItem="Mhf-A9-lSE" firstAttribute="centerX" secondItem="lTb-hJ-pdM" secondAttribute="centerX" id="5yO-nq-wMh"/>
+                                    <constraint firstItem="Mhf-A9-lSE" firstAttribute="leading" secondItem="lTb-hJ-pdM" secondAttribute="leading" id="AVQ-x4-JWo"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mhf-A9-lSE" secondAttribute="bottom" id="D30-ap-hxL"/>
+                                    <constraint firstItem="Mhf-A9-lSE" firstAttribute="top" secondItem="lTb-hJ-pdM" secondAttribute="top" id="yJ8-4Z-k8w"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.023529411760000001" green="0.32156862749999998" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="lTb-hJ-pdM" firstAttribute="leading" secondItem="BiW-Vx-HZR" secondAttribute="leading" id="AAM-Ub-9GS"/>
+                            <constraint firstAttribute="bottom" secondItem="lTb-hJ-pdM" secondAttribute="bottom" id="E0p-tL-J4O"/>
+                            <constraint firstItem="BiW-Vx-HZR" firstAttribute="trailing" secondItem="tLj-7u-ab4" secondAttribute="trailing" constant="18" id="JgD-sk-ww0"/>
+                            <constraint firstItem="tLj-7u-ab4" firstAttribute="leading" secondItem="BiW-Vx-HZR" secondAttribute="leading" constant="18" id="dn6-ji-Yha"/>
+                            <constraint firstItem="tLj-7u-ab4" firstAttribute="top" secondItem="BiW-Vx-HZR" secondAttribute="top" id="gOq-BZ-8gH"/>
+                            <constraint firstItem="lTb-hJ-pdM" firstAttribute="trailing" secondItem="BiW-Vx-HZR" secondAttribute="trailing" id="iCo-gx-Fo6"/>
+                            <constraint firstItem="lTb-hJ-pdM" firstAttribute="top" secondItem="tLj-7u-ab4" secondAttribute="bottom" constant="8" id="irO-Bt-yJk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BiW-Vx-HZR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="awk-yv-l9z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="131.91964285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Money" width="182" height="152"/>
+    </resources>
+</document>
