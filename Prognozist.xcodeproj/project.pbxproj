@@ -41,7 +41,7 @@
 		AC6C3782231CF50C003F583E /* TimerForCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerForCells.swift; sourceTree = "<group>"; };
 		AC6C3784231CF7DD003F583E /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		AC6C3786231D3C7C003F583E /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		AC73EC7723159C28006783C0 /* Prognozist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prognozist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC73EC7723159C28006783C0 /* Прогнозы.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Прогнозы.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC73EC7A23159C28006783C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC73EC7F23159C28006783C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC73EC8223159C28006783C0 /* Prognozist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Prognozist.xcdatamodel; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 		AC73EC7823159C28006783C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC73EC7723159C28006783C0 /* Prognozist.app */,
+				AC73EC7723159C28006783C0 /* Прогнозы.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -248,7 +248,7 @@
 			);
 			name = Prognozist;
 			productName = Prognozist;
-			productReference = AC73EC7723159C28006783C0 /* Prognozist.app */;
+			productReference = AC73EC7723159C28006783C0 /* Прогнозы.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -479,7 +479,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = a.s.bitsoev.Prognozist;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Прогнозы";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -498,7 +498,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = a.s.bitsoev.Prognozist;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Прогнозы";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

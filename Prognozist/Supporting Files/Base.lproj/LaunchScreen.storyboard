@@ -1,25 +1,95 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14865.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14819.2"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Bold.otf">
+            <string>SFProText-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Фон сплэш" translatesAutoresizingMaskIntoConstraints="NO" id="XIv-ya-yz3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Мяч" translatesAutoresizingMaskIntoConstraints="NO" id="16P-aV-lSJ">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="16P-aV-lSJ" secondAttribute="height" multiplier="1:1" id="1l4-2A-oNQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ЕП" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ec0-X1-HF8">
+                                <rect key="frame" x="136" y="74" width="142" height="194"/>
+                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DWJ-bZ-AUd">
+                                <rect key="frame" x="0.0" y="628" width="414" height="204"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ежедневные" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="qoc-Tb-niK">
+                                        <rect key="frame" x="30" y="40" width="354" height="58"/>
+                                        <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="48"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="прогнозы" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="e00-DD-GhK">
+                                        <rect key="frame" x="30" y="106" width="354" height="58"/>
+                                        <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="48"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qoc-Tb-niK" secondAttribute="trailing" constant="30" id="6Pg-qD-pEq"/>
+                                    <constraint firstItem="e00-DD-GhK" firstAttribute="leading" secondItem="DWJ-bZ-AUd" secondAttribute="leading" constant="30" id="7I0-QM-qzL"/>
+                                    <constraint firstItem="qoc-Tb-niK" firstAttribute="leading" secondItem="DWJ-bZ-AUd" secondAttribute="leading" constant="30" id="8f8-Jj-4RO"/>
+                                    <constraint firstItem="e00-DD-GhK" firstAttribute="centerY" secondItem="DWJ-bZ-AUd" secondAttribute="centerY" constant="33" id="Q9f-ad-CjX"/>
+                                    <constraint firstAttribute="trailing" secondItem="e00-DD-GhK" secondAttribute="trailing" constant="30" id="a9T-nk-V3z"/>
+                                    <constraint firstItem="qoc-Tb-niK" firstAttribute="centerY" secondItem="DWJ-bZ-AUd" secondAttribute="centerY" constant="-33" id="hQY-or-DmB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.086274509803921567" green="0.054901960784313725" blue="0.38431372549019605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="16P-aV-lSJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6hK-Fa-iqH"/>
+                            <constraint firstItem="16P-aV-lSJ" firstAttribute="width" secondItem="XIv-ya-yz3" secondAttribute="width" multiplier="300:414" id="Hkh-Ob-FMF"/>
+                            <constraint firstItem="ec0-X1-HF8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Onr-pr-f3J"/>
+                            <constraint firstItem="XIv-ya-yz3" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="RoB-DR-eMB"/>
+                            <constraint firstItem="DWJ-bZ-AUd" firstAttribute="top" secondItem="16P-aV-lSJ" secondAttribute="bottom" constant="30" id="W3P-nv-H52"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DWJ-bZ-AUd" secondAttribute="bottom" constant="30" id="emA-ZB-epl"/>
+                            <constraint firstItem="ec0-X1-HF8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hFw-da-9KN"/>
+                            <constraint firstItem="16P-aV-lSJ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="jWM-zB-2BH"/>
+                            <constraint firstItem="DWJ-bZ-AUd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="krU-IC-oVi"/>
+                            <constraint firstItem="XIv-ya-yz3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sz1-MH-ke6"/>
+                            <constraint firstItem="16P-aV-lSJ" firstAttribute="top" secondItem="ec0-X1-HF8" secondAttribute="bottom" constant="30" id="w0F-F2-Tz8"/>
+                            <constraint firstItem="DWJ-bZ-AUd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="x79-h8-0Qs"/>
+                            <constraint firstItem="XIv-ya-yz3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xXo-Yy-lRI"/>
+                            <constraint firstAttribute="bottom" secondItem="XIv-ya-yz3" secondAttribute="bottom" id="zj4-wd-fFZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Мяч" width="308" height="308"/>
+        <image name="Фон сплэш" width="414" height="896"/>
+    </resources>
 </document>
