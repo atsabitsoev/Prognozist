@@ -21,7 +21,7 @@
         <!--SubscribtionVC-->
         <scene sceneID="Rf7-aY-U4r">
             <objects>
-                <viewController id="WYb-di-QNo" customClass="SubscribtionVC" customModule="Prognozist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SubscribtionVC" id="WYb-di-QNo" customClass="SubscribtionVC" customModule="Prognozist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bYC-QS-126">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

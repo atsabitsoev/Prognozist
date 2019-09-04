@@ -48,6 +48,9 @@
                                                     <integer key="value" value="48"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <segue destination="d3t-bV-8Lx" kind="show" id="ybW-3V-EHv"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -157,6 +160,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="109.82142857142857"/>
+        </scene>
+        <!--SubscribtionVC-->
+        <scene sceneID="gPF-gH-pnc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Subscribtion" referencedIdentifier="SubscribtionVC" id="d3t-bV-8Lx" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aRV-ua-Hpj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2693" y="33"/>
         </scene>
         <!--SettingsVC-->
         <scene sceneID="k5t-3E-Lpn">
