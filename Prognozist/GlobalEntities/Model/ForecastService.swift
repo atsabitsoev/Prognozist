@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import FirebaseFirestore
+import FirebaseCore
 
 
 class ForecastService {
@@ -19,35 +21,39 @@ class ForecastService {
     var currentForecasts: [Forecast]?
     
     
-    func getForecastsRequest() {
+    func getForecastsRequest(dateString: String) {
         
-        currentForecasts = [Forecast(mainTitle: "Главное описание",
-                                     additionalTitle: "Дополнительное описание",
-                                     describtion: "ставка",
-                                     multiplier: "2.7",
-                                     partOfBank:  "10%",
-                                     dateString: "22/01/01, 16:00",
-                                     author: "Серега Иванов",
-                                     authorsDescribtion: "Динамо Москва в отличной форме, игроки выйдут на матч в полном стартовом составе, в отличие от ФК Томбов, у которого отсутствует главный голкипер и еще несколько игроков основного состава. Последние 4 матча Динамо забивает по 3 мяча. Думаю победа будет легкой, всем удачи!"),
-                            Forecast(mainTitle: "Главное описание",
-                                     additionalTitle: "Дополнительное описание",
-                                     describtion: "ставка",
-                                     multiplier: "2.7",
-                                     partOfBank:  "10%",
-                                     dateString: "22/01/01, 16:00",
-                                     author: "Иван Петров",
-                                     authorsDescribtion: "Динамо Москва в отличной форме, игроки выйдут на матч в полном стартовом составе, в отличие от ФК Томбов, у которого отсутствует главный голкипер и еще несколько игроков основного состава. Последние 4 матча Динамо забивает по 3 мяча. Думаю победа будет легкой, всем удачи!"),
-                            Forecast(mainTitle: "Главное описание",
-                                     additionalTitle: "Дополнительное описание",
-                                     describtion: "ставка",
-                                     multiplier: "2.7",
-                                     partOfBank:  "10%",
-                                     dateString: "22/01/01, 16:00",
-                                     author: "Дима Комба",
-                                     authorsDescribtion: "Внимание Динамо Москва в отличной форме, игроки выйдут на матч в полном стартовом составе, в отличие от ФК Томбов, у которого отсутствует главный голкипер и еще несколько игроков основного состава. Последние 4 матча Динамо забивает по 3 мяча. Думаю победа будет легкой, всем удачи!")]
+        let db = Firestore.firestore()
         
-        NotificationCenter.default.post(name: NSNotification.Name(NotificationNames.forecastsFetched.rawValue),
-                                        object: nil)
+        let collectionRef = db.collection(dateString)
+        
+        collectionRef.getDocuments { (query, error) in
+            
+            print(dateString)
+            
+            guard let query = query else {
+                print(error!.localizedDescription)
+                self.currentForecasts = nil
+                return
+            }
+            
+            let newForecasts = query.documents.map({ (document) -> Forecast in
+                let docData = document.data()
+                return Forecast(mainTitle: docData["mainTitle"] as? String ?? "",
+                                additionalTitle: docData["additionalTitle"] as? String ?? "",
+                                describtion: docData["forecastName"] as? String ?? "",
+                                multiplier: docData["multiplier"] as? String ?? "",
+                                partOfBank: docData["partOfBank"] as? String ?? "",
+                                dateString: docData["date"] as? String ?? "",
+                                author: docData["authorsName"] as? String ?? "",
+                                authorsDescribtion: docData["authorsDescribtion"] as? String ?? "")
+            })
+            
+            self.currentForecasts = newForecasts.reversed()
+            NotificationCenter.default.post(name: NSNotification.Name(NotificationNames.forecastsFetched.rawValue),
+                                            object: nil)
+        }
+        
     }
     
     

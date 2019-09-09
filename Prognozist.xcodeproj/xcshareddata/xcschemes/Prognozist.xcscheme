@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AC73EC7623159C28006783C0"
-               BuildableName = "Prognozist.app"
+               BuildableName = "&#x41f;&#x440;&#x43e;&#x433;&#x43d;&#x43e;&#x437;&#x44b;.app"
                BlueprintName = "Prognozist"
                ReferencedContainer = "container:Prognozist.xcodeproj">
             </BuildableReference>
@@ -27,19 +27,17 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
-      </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AC73EC7623159C28006783C0"
-            BuildableName = "Prognozist.app"
+            BuildableName = "&#x41f;&#x440;&#x43e;&#x433;&#x43d;&#x43e;&#x437;&#x44b;.app"
             BlueprintName = "Prognozist"
             ReferencedContainer = "container:Prognozist.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <Testables>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -56,13 +54,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AC73EC7623159C28006783C0"
-            BuildableName = "Prognozist.app"
+            BuildableName = "&#x41f;&#x440;&#x43e;&#x433;&#x43d;&#x43e;&#x437;&#x44b;.app"
             BlueprintName = "Prognozist"
             ReferencedContainer = "container:Prognozist.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
       <LocationScenarioReference
          identifier = "com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier"
          referenceType = "1">
@@ -79,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AC73EC7623159C28006783C0"
-            BuildableName = "Prognozist.app"
+            BuildableName = "&#x41f;&#x440;&#x43e;&#x433;&#x43d;&#x43e;&#x437;&#x44b;.app"
             BlueprintName = "Prognozist"
             ReferencedContainer = "container:Prognozist.xcodeproj">
          </BuildableReference>

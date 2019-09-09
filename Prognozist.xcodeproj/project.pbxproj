@@ -33,9 +33,14 @@
 		ACDC97E1231C511800E80ACA /* Forecast.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDC97E0231C511800E80ACA /* Forecast.storyboard */; };
 		ACDC97E6231C59CC00E80ACA /* ForecastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC97E5231C59CC00E80ACA /* ForecastVC.swift */; };
 		ACDC97E8231C722900E80ACA /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC97E7231C722900E80ACA /* NotificationNames.swift */; };
+		ACE718B023265E8400C3E2C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACE718AF23265E8400C3E2C8 /* GoogleService-Info.plist */; };
+		F6D27156345941156CF4C878 /* Pods_Prognozist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF7C47C4B7567609D72CB66 /* Pods_Prognozist.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BF7C47C4B7567609D72CB66 /* Pods_Prognozist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prognozist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56173E9B3B76E723119D5127 /* Pods-Prognozist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prognozist.release.xcconfig"; path = "Target Support Files/Pods-Prognozist/Pods-Prognozist.release.xcconfig"; sourceTree = "<group>"; };
+		5DE1D37F3AF4454FF62EB72F /* Pods-Prognozist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prognozist.debug.xcconfig"; path = "Target Support Files/Pods-Prognozist/Pods-Prognozist.debug.xcconfig"; sourceTree = "<group>"; };
 		AC6C377E231CE831003F583E /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
 		AC6C377F231CE831003F583E /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		AC6C3782231CF50C003F583E /* TimerForCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerForCells.swift; sourceTree = "<group>"; };
@@ -64,6 +69,7 @@
 		ACDC97E0231C511800E80ACA /* Forecast.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Forecast.storyboard; sourceTree = "<group>"; };
 		ACDC97E5231C59CC00E80ACA /* ForecastVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastVC.swift; sourceTree = "<group>"; };
 		ACDC97E7231C722900E80ACA /* NotificationNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNames.swift; sourceTree = "<group>"; };
+		ACE718AF23265E8400C3E2C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,12 +77,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6D27156345941156CF4C878 /* Pods_Prognozist.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00C2161AF2B53B33FE5DC745 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BF7C47C4B7567609D72CB66 /* Pods_Prognozist.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88C3A5EEBED8D691F6326848 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DE1D37F3AF4454FF62EB72F /* Pods-Prognozist.debug.xcconfig */,
+				56173E9B3B76E723119D5127 /* Pods-Prognozist.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AC6C377D231CE80D003F583E /* Шрифты */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +117,8 @@
 			children = (
 				AC73EC7923159C28006783C0 /* Prognozist */,
 				AC73EC7823159C28006783C0 /* Products */,
+				88C3A5EEBED8D691F6326848 /* Pods */,
+				00C2161AF2B53B33FE5DC745 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +140,7 @@
 				ACA3C9F0231F08FA00CC1611 /* Subscribtion */,
 				AC73EC962315A122006783C0 /* Supporting Files */,
 				AC73EC8923159C2A006783C0 /* Info.plist */,
+				ACE718AF23265E8400C3E2C8 /* GoogleService-Info.plist */,
 				AC73EC8123159C28006783C0 /* Prognozist.xcdatamodeld */,
 			);
 			path = Prognozist;
@@ -238,9 +265,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC73EC8C23159C2A006783C0 /* Build configuration list for PBXNativeTarget "Prognozist" */;
 			buildPhases = (
+				E2B16B8EFF742B132293B660 /* [CP] Check Pods Manifest.lock */,
 				AC73EC7323159C28006783C0 /* Sources */,
 				AC73EC7423159C28006783C0 /* Frameworks */,
 				AC73EC7523159C28006783C0 /* Resources */,
+				CDA861833DA8920FE1B834E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -297,12 +326,72 @@
 				AC73EC8523159C2A006783C0 /* Assets.xcassets in Resources */,
 				ACA3C9EB231EECE400CC1611 /* Subscribtion.storyboard in Resources */,
 				ACA3C9ED231EEFCF00CC1611 /* 17688.otf in Resources */,
+				ACE718B023265E8400C3E2C8 /* GoogleService-Info.plist in Resources */,
 				AC73EC8023159C28006783C0 /* Main.storyboard in Resources */,
 				AC6C3787231D3C7C003F583E /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CDA861833DA8920FE1B834E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Prognozist/Pods-Prognozist-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Prognozist/Pods-Prognozist-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2B16B8EFF742B132293B660 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Prognozist-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC73EC7323159C28006783C0 /* Sources */ = {
@@ -468,6 +557,7 @@
 		};
 		AC73EC8D23159C2A006783C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DE1D37F3AF4454FF62EB72F /* Pods-Prognozist.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -487,6 +577,7 @@
 		};
 		AC73EC8E23159C2A006783C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56173E9B3B76E723119D5127 /* Pods-Prognozist.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
