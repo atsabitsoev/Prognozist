@@ -23,7 +23,7 @@ class MainModel {
             let year = dateComponentsToday.year else {
                 return
         }
-        let dateStringToday = "\(day)/\(month)/\(year)"
-        ForecastService.standard.getForecastsRequest(dateString: "9\\09\\2019")//dateStringToday)
+        let dateStringToday = "\(day)\\\(month)\\\(year)"
+        ForecastService.standard.getForecastsRequest(dateString: dateStringToday)
     }
 }

@@ -22,6 +22,9 @@ class DailyForecastCell: UITableViewCell {
     var shown: Bool = false {
         didSet {
             set()
+            if shown {
+                NotificationManager.post(.shouldUpdateForecasts)
+            }
         }
     }
     

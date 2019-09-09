@@ -39,6 +39,16 @@ class MainVC: UIViewController {
                                                selector: #selector(setNewForecasts),
                                                name: NSNotification.Name(NotificationNames.forecastsFetched.rawValue),
                                                object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(fetchForecasts),
+                                               name: NSNotification.Name(NotificationNames.shouldUpdateForecasts.rawValue),
+                                               object: nil)
+    }
+    
+    
+    @objc
+    private func fetchForecasts() {
+        model.fetchForecasts()
     }
     
     @objc
